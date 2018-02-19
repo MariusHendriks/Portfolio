@@ -1,7 +1,9 @@
 *{
 	padding: 0;
 	margin: 0;
-	/*background-image: url(../img/bg-green.png)*/
+}
+html{
+	overflow-y: scroll;
 }
 main{
 	margin-top: 20px;
@@ -9,25 +11,20 @@ main{
 nav{
 	background-color: #2b542c;
 }
-nav .brand-logo.right{
-
+.container .row{
+	margin-left: 0px;
+	margin-right: 0px;
 }
 nav ul a{
-	background: none!important;
 	padding: 0 30px;
 }
 nav ul a:hover{
-	background-color: #003300!important;
+	background-color: #003300;
 }
-nav ul li{
-	background: none!important;
-}
-nav .brand-logo{
-	background: none!important;
-}
+
 .weekNumber{
-	height: 80px!important;
-	line-height: 80px!important;
+	height: 80px;
+	line-height: 80px;
 	text-align: center;
 	background: #2b542c;
 	color: #fff;
@@ -37,4 +34,16 @@ nav .brand-logo{
 }
 .courserow{
 	margin-bottom: 5px;
+}
+.textEdit{
+	height: 200px;
+	width: 100%;
+	padding: 5px;
+}
+.default-btn{
+	background-color: #2b542c;
+	border-radius: 0px;
+}
+.default-btn:hover {
+	background-color: #003300;
 }

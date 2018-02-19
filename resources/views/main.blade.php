@@ -4,6 +4,7 @@
 		<title>@yield('Title', 'Portfolio')</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 		<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	</head>
 		<nav>
 			<div class="container">
@@ -25,9 +26,7 @@
 			@yield('Main')
 			<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-			<script type="text/javascript">
-
-			</script>
+			@yield('Javascript')
 		</main>
 	</body>
 </html>
