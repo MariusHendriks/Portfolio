@@ -18,8 +18,8 @@ class CourseController
     function index($course){
         $textContent = (new WebsiteText)
             ->where('course', '=', $course)
+            ->get();
 
-            ->get(['textContent']);
         return view ('course', compact('textContent'));
     }
 }
