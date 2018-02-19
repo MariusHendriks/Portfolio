@@ -1,0 +1,10 @@
+*{
+	padding: 0;
+	margin: 0;
+	background-image: url(../img/bg-green.png)
+}
+nav{
+	background: none;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+}
