@@ -8,11 +8,13 @@
 
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
+
     <form method="post">
         {{-- Beveiliging ((https://laravel.com/docs/5.6/csrf#csrf-x-csrf-token)) --}}
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
         <div class="row">
             <div class="col s12">
+                <h5>HTML Huidige text</h5>
                 <textarea id="oldText" name="oldText" class="textEdit" label="editfield" title="editfield">
                     {!! trim($coursesText->textContent) !!}
                 </textarea>

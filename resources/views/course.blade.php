@@ -20,7 +20,7 @@
                 </div>
                 <div class="col s1">
                     <a href="{{route('courseEdit', ['course' => $course->course,'week' => $course->week])}}">
-                        <i class="material-icons">mode_edit</i></a>
+                        <i class="material-icons editpencil">mode_edit</i></a>
                 </div>
             @else
                 <div class="offset-s1 col s9">

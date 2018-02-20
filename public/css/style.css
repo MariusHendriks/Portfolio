@@ -21,6 +21,9 @@ nav ul a{
 nav ul a:hover{
 	background-color: #003300;
 }
+h1,h2,h3,h4,h5,h6{
+	color: #2b542c;
+}
 
 .weekNumber{
 	height: 80px;
@@ -46,4 +49,7 @@ nav ul a:hover{
 }
 .default-btn:hover {
 	background-color: #003300;
+}
+.editpencil{
+	color: #2b542c;
 }
