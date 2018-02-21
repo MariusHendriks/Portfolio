@@ -20,7 +20,6 @@ class CourseEditController
             ->where('week', '=', $week)
             ->get()
             ->first();
-
         if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1){
             return view ('courseedit', compact('coursesText'));
         }

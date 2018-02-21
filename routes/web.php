@@ -9,3 +9,4 @@ Route::get('/courses/{course}/{week}/edit', ['uses' => 'CourseEditController@ind
 Route::post('/courses/{course}/{week}/edit', ['uses' => 'CourseEditController@store', 'as' => 'courseEdited']);
 Route::get('/courses/{course}', ['uses' => 'CourseController@index']);
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/php/', ['uses' => 'PhpExample@index']);
