@@ -1,0 +1,15 @@
+* {
+
+}
+
+html {
+
+}
+
+body {
+	overflow-y: scroll;
+}
+
+.hidden {
+	visibility: hidden;
+}
