@@ -12,9 +12,12 @@ namespace App\Http\Controllers;
 class AddWeekController
 {
     function index(){
-
+        return view('addWeek');
     }
-    function store(){
-
+    function create(){
+        return view('addWeek');
     }
+/*    function store(){
+
+    }*/
 }
