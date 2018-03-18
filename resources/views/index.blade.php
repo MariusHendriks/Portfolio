@@ -10,8 +10,10 @@
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
 
-index
+@foreach($vakinfo as $vak)
 
+	<li>{{ $vak->textContent }}</li>
 
+@endforeach
 
 @endsection
