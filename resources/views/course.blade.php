@@ -41,5 +41,20 @@
                 </a>
             </div>
         </div>
+
+
+        <div class="test">d</div>
+        <div class="test">d</div>
+        <div class="test">d</div>
+        <div class="test">d</div>
+        <div class="test">d</div>
+
     @endif
+
+    <script>
+        $( ".test" ).one( "click", function() {
+            $( this ).width( modWidth ).addClass( "mod" );
+            modWidth -= 8;
+        });
+    </script>
 @endsection
