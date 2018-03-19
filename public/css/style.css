@@ -68,3 +68,9 @@ test {
 	background: blue;
 	cursor: default;
 }
+.textblok {
+	background-color: blue!important;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+}
