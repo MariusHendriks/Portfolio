@@ -12,7 +12,7 @@
 
 @foreach($vakinfo as $vak)
 
-	<li>{{ $vak->textContent }}</li>
+
 
 @endforeach
 
