@@ -1,39 +1,42 @@
-<div class="container">
-    <div class="owl-carousel">
-    </div>
+
+
+<div class="owl-carousel sprint{{$sprint}}">
 </div>
 
 <script>
-    amount = {{ $amount }};
-    amountdisplay = 0;
-    switch(amount) {
-        case amount = 1:
-            amountdisplay = 1;
+
+    amount{{$sprint}} = {{$amount}};
+    amountdisplay{{$sprint}} = 0;
+    switch(amount{{$sprint}}) {
+        case amount{{$sprint}} = 1:
+            amountdisplay{{$sprint}} = 1;
             break;
-        case amount = 2:
-            amountdisplay = 1;
+        case amount{{$sprint}} = 2:
+            amountdisplay{{$sprint}} = 2;
             break;
-        case amount = 3:
-            amountdisplay = 2;
+        case amount{{$sprint}} = 3:
+            amountdisplay{{$sprint}} = 3;
             break;
-        case amount = 4:
-            amountdisplay = 2;
+        case amount{{$sprint}} = 4:
+            amountdisplay{{$sprint}} = 4;
             break;
-        case amount = 5:
-            amountdisplay = 4;
+        case amount{{$sprint}} = 5:
+            amountdisplay{{$sprint}} = 5;
             break;
         default:
-            amountdisplay = 1
+            amountdisplay{{$sprint}} = 1;
     }
     $(document).ready(function () {
-        for (var i = 1; i < amount+1; i++) {
-            $(".owl-carousel").append("<div class='textblok'>Appended text"  + i + "</div>");
+        for (var i = 1; i < amount{{$sprint}}+1; i++) {
+            $(".sprint{{$sprint}}").append("<div class='textblok'>Appended text"  + i + "</div>");
         }
-        $(".owl-carousel").owlCarousel({
-            items: amountdisplay,
+        $(".sprint{{$sprint}}").owlCarousel({
+            items: amountdisplay{{$sprint}},
             lazyLoad: true,
+            nav:true,
             margin:10
         });
     });
+
 
 </script>
