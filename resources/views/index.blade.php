@@ -10,10 +10,9 @@
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
 
-@foreach($vakinfo as $vak)
-
 
 
 @endforeach
+
 
 @endsection
