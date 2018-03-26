@@ -4,13 +4,14 @@
 
 {{-- Veranderd de titel van courses met de blade-manier van laravel --}}
 @section('title')
-	Courses
+    Courses
 @endsection
 
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
 
-courses
+    Templates
+
 
 
 @endsection

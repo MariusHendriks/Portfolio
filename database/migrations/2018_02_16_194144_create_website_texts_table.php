@@ -20,7 +20,6 @@ class CreateWebsiteTextsTable extends Migration
             $table->integer('week');
             $table->integer('sprint');
             $table->text('title');
-            $table->text('title');
         });
     }
 
