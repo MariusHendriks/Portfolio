@@ -1,7 +1,6 @@
-<div class="container">
+
     <div class="owl-carousel">
     </div>
-</div>
 
 <script>
     amount = {{ $amount }};

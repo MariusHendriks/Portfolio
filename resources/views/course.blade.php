@@ -8,12 +8,16 @@
 
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
+    <div class="container">
+
+
     <h1>sprint 1</h1>
-    @include('carrousel', ['amount' => '4'])
-    <h1>sprint 2</h1>
-    @include('carrousel', ['amount' => '5'])
-    <h1>sprint 3</h1>
-    @include('carrousel', ['amount' => '2'])
-    <h1>sprint 4</h1>
-    @include('carrousel', ['amount' => '4'])
+    @include('carrousel', ['amount' => '3'])
+    {{--    <h1>sprint 2</h1>
+        @include('carrousel', ['amount' => '5'])
+        <h1>sprint 3</h1>
+        @include('carrousel', ['amount' => '2'])
+        <h1>sprint 4</h1>
+        @include('carrousel', ['amount' => '4'])--}}
+    </div>
 @endsection
