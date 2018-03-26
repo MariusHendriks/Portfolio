@@ -17,7 +17,10 @@ class CreateWebsiteTextsTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->text('textContent');
-             $table->integer('week');
+            $table->integer('week');
+            $table->integer('sprint');
+            $table->text('title');
+            $table->text('title');
         });
     }
 

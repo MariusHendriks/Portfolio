@@ -1,13 +1,6 @@
-
-
-
-
 <div class="owl-carousel sprint{{$sprint}}">
 </div>
-
-
 <script>
-
     amount{{$sprint}} = {{$amount}};
     amountdisplay{{$sprint}} = 0;
     switch(amount{{$sprint}}) {
@@ -40,6 +33,4 @@
             margin:10
         });
     });
-
-
 </script>
