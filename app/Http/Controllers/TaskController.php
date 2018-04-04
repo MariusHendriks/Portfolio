@@ -13,15 +13,13 @@ use App\WebsiteText;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 
-class CourseController
+class TaskController
 {
-    function index($course){
+    function index($course, $task){
         $textContent = (new WebsiteText)
-            ->where('course', '=', $course)
+            ->where('title', '=', $task)
             ->get()
-            ->groupBy('sprint')
-            ->sortByDesc( 'sprint');
-
-        return view ('course', compact('textContent'));
+            ->first();
+        return view ('task', compact('textContent'));
     }
 }

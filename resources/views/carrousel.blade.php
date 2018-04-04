@@ -1,36 +1,18 @@
-<div class="owl-carousel sprint{{$sprint}}">
+<?php $sprintNumber = $sprint->first()->sprint ?>
+<div class="owl-carousel sprint{{$sprintNumber}}">
 </div>
 <script>
-    //define data die is doorgestuurd
-    amount{{$sprint}} = {{$amount}};
-    amountdisplay{{$sprint}} = 0;
-    switch(amount{{$sprint}}) {
-        case amount{{$sprint}} = 1:
-            amountdisplay{{$sprint}} = 1;
-            break;
-        case amount{{$sprint}} = 2:
-            amountdisplay{{$sprint}} = 2;
-            break;
-        case amount{{$sprint}} = 3:
-            amountdisplay{{$sprint}} = 3;
-            break;
-        case amount{{$sprint}} = 4:
-            amountdisplay{{$sprint}} = 4;
-            break;
-        case amount{{$sprint}} = 5:
-            amountdisplay{{$sprint}} = 5;
-            break;
-        default:
-            amountdisplay{{$sprint}} = 1;
-    }
     $(document).ready(function () {
-        for (var i = 1; i < amount{{$sprint}}+1; i++) {
-            $(".sprint{{$sprint}}").append("<div class='textblok'>"  /*data title output*/+ i + "</div>");
-        }
-        $(".sprint{{$sprint}}").owlCarousel({
-            items: amountdisplay{{$sprint}},
+
+
+        @foreach($sprint as $item)
+            $(".sprint{{$sprintNumber}}").append("<a href='{{route('taskindex', ['course' => $item->course, 'task' => $item->title])}}'> <div class='textblok'> {{$item->title}}</div></a> ");
+        @endforeach
+
+        $(".sprint{{$sprintNumber}}").owlCarousel({
+            items: 1,
             lazyLoad: true,
-            nav:true,
+            nav:false,
             margin:10
         });
     });
