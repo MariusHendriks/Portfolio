@@ -19,7 +19,6 @@ class CourseController
         $textContent = (new WebsiteText)
             ->where('course', '=', $course)
             ->get();
-
         return view ('course', compact('textContent'));
     }
 }

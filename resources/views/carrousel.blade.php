@@ -1,6 +1,7 @@
 <div class="owl-carousel sprint{{$sprint}}">
 </div>
 <script>
+    //define data die is doorgestuurd
     amount{{$sprint}} = {{$amount}};
     amountdisplay{{$sprint}} = 0;
     switch(amount{{$sprint}}) {
@@ -24,7 +25,7 @@
     }
     $(document).ready(function () {
         for (var i = 1; i < amount{{$sprint}}+1; i++) {
-            $(".sprint{{$sprint}}").append("<div class='textblok'>Appended text"  + i + "</div>");
+            $(".sprint{{$sprint}}").append("<div class='textblok'>"  /*data title output*/+ i + "</div>");
         }
         $(".sprint{{$sprint}}").owlCarousel({
             items: amountdisplay{{$sprint}},
