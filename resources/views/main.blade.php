@@ -12,13 +12,18 @@
 <nav>
     <div class="container">
         <div class="nav-wrapper">
+
             <a href="../../" class="brand-logo right">Portfolio</a>
+
             <ul id="nav-mobile" class="left hide-on-med-and-down	">
                 <li><a href="/courses/DED">DED</a></li>
                 <li><a href="/courses/SCO">SCO</a></li>
                 <li><a href="/courses/UXU">UXU</a></li>
                 <li><a href="/courses/PTM">PTM</a></li>
                 <li><a href="/courses/ME">ME</a></li>
+                @if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1)
+                    <li><a href="/courses/add">ADD</a></li>
+                @endif
             </ul>
         </div>
     </div>

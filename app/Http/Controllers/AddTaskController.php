@@ -9,13 +9,13 @@
 namespace App\Http\Controllers;
 
 
-class AddWeekController
+class AddTaskController
 {
     function index(){
-        return view('addWeek');
+        return view('addTask');
     }
     function create(){
-        return view('addWeek');
+        return view('addTask');
     }
 /*    function store(){
 

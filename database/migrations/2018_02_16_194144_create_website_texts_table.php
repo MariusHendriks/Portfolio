@@ -19,8 +19,10 @@ class CreateWebsiteTextsTable extends Migration
             $table->text('textContent');
             $table->integer('week');
             $table->integer('sprint');
-            $table->text('title');
-            $table->text('course');
+            $table->string('title');
+            $table->string('course');
+            $table->integer('proudness');
+            $table->string('photopath');
         });
     }
 
