@@ -16,6 +16,6 @@ class WebsiteText extends Model
     /**
      * @var array
          */
-    protected $fillable = ['textContent', 'course', 'week'];
+    protected $fillable = ['title', 'course', 'textContent', 'week', 'sprint', 'proudness', 'photopath'];
 
 }

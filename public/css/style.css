@@ -12,6 +12,11 @@ main{
 nav{
 	background-color: #2b542c;
 }
+textarea {
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 100px;
+}
 .container .row{
 	margin-left: 0px;
 	margin-right: 0px;
@@ -54,8 +59,6 @@ h1,h2,h3,h4,h5,h6{
 .editpencil{
 	color: #2b542c;
 }
-
-
 
 test {
 	width: 70px;

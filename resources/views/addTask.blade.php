@@ -9,52 +9,53 @@
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
     <div class="container">
-        <div class="row">
-            <form class="col s12">
-                <h1>Add a new week!</h1>
-                <div class="row">
-                    <div class="input-field col s6">
-                        <input placeholder="Weeknummer" id="week" type="text" class="validate">
-                        <label for="week">Weeknummer</label>
-                    </div>
-                    <div class="input-field col s12 m6">
-                        <div class="select-wrapper"><span class="caret">▼</span><input type="text"
-                                                                                       class="select-dropdown"
-                                                                                       readonly="true"
-                                                                                       data-activates="select-options-a5d767e3-2b06-b437-5e61-815c397ae96d"
-                                                                                       value="Choose your option">
-                            <ul id="select-options-a5d767e3-2b06-b437-5e61-815c397ae96d"
-                                class="dropdown-content select-dropdown"
-                                style="width: 358.391px; position: absolute; top: 0px; left: 0px; display: none; opacity: 1;">
-                                <li class="disabled"><span>Choose your option</span></li>
-                                <li class=""><span>Option 1</span></li>
-                                <li class="active"><span>Option 2</span></li>
-                                <li class=""><span>Option 3</span></li>
-                            </ul>
-                            <select data-select-id="a5d767e3-2b06-b437-5e61-815c397ae96d" class="initialized">
-                                <option value="" disabled="" selected="">Choose your option</option>
-                                <option value="1">Sco</option>
-                                <option value="2">Uxu</option>
-                                <option value="3">Ptm</option>
-                                <option value="4">Ded</option>
-                                <option value="5">Me</option>
-                            </select></div>
-                        <label>Materialize Select</label>
-                    </div>
+        <form method="POST" action="">
+            {{ csrf_field() }}
+            <div class="row">
+                <h2>Add</h2>
+                <div class="col s6">
+                    <label for="title">Titel:</label>
+                    <input type="text" name="title" title="title" />
                 </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input placeholder="vak" id="vak" type="text" class="validate">
-                        <label for="vak">Vak</label>
-                    </div>
+                <div class="col s6">
+                    <label for="course">Course:</label>
+                    <input type="text" name="course" title="course" />
                 </div>
-
-            </form>
-        </div>
+            </div>
+            <div class="row">
+                <div class="col s4">
+                    <label for="week">Week:</label>
+                    <input type="number" name="week" title="week" />
+                </div>
+                <div class="col s4">
+                    <label for="sprint">Sprint:</label>
+                    <input type="number" name="sprint" title="sprint" />
+                </div>
+                <div class="col s4">
+                    <label for="proudness">Proudness:</label>
+                    <input type="number" name="proudness" title="proudness" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <label for="photopath">Photo path:</label>
+                    <input type="text" name="photopath" title="photopath"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <label for="content">Content:</label>
+                    <textarea id="content" placeholder="Opdracht hier" name="content" class="contentTextArea" label="content" title="content" ></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s6">
+                    <button class="btn waves-effect waves-light default-btn" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+           @include ('errorcheck')
+        </form>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('select').material_select();
-        });
-    </script>
 @endsection

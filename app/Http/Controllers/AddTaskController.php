@@ -9,15 +9,39 @@
 namespace App\Http\Controllers;
 
 
-class AddTaskController
+use App\WebsiteText;
+
+class AddTaskController extends Controller
 {
     function index(){
-        return view('addTask');
-    }
-    function create(){
-        return view('addTask');
-    }
-/*    function store(){
 
-    }*/
+    }
+
+    public function create()
+    {
+        return view('addTask');
+    }
+
+    public function store()
+    {
+        $this->validate(request(),[
+            'title' => 'required',
+            'sprint' => 'required',
+            'week' => 'required',
+            'course' => 'required',
+            'proudness' => 'required'
+        ]);
+
+        Websitetext::create([
+                'textContent' => request('content'),
+                'week' => request('week'),
+                'sprint' => request('sprint'),
+                'title' => request('title'),
+                'course' => request('course'),
+                'proudness' => request('proudness'),
+                'photopath' => request('photopath')
+            ]);
+
+        return redirect('/');
+    }
 }
