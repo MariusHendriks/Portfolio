@@ -7,7 +7,7 @@ Route::get('/', function () {
 Route::get('/courses', ['uses' => 'CoursesController@index']);
 Route::get('/courses/add/', ['uses' => 'AddTaskController@create', 'as' => 'addTask']);
 Route::get('/courses/{course}', ['uses' => 'CourseController@index']);
-Route::get('/courses/{course}', ['uses' => 'CourseController@index']);
+Route::get('/courses/{course}/{task}', ['uses' => 'TaskController@index', 'as' => 'taskIndex']);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/php/', ['uses' => 'PhpExample@index']);

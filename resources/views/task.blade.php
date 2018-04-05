@@ -8,8 +8,10 @@
 
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
-
-    {{$textContent->title}}
+<div class="container">
+  <h3>{{$textContent->title}}</h3>
+  {!! $textContent->textContent !!}
+</div>
 
 
 
