@@ -32,7 +32,7 @@ class AddTaskController extends Controller
             'proudness' => 'required'
         ]);
 
-        Websitetext::create([
+        (new \App\WebsiteText)->create([
                 'textContent' => request('content'),
                 'week' => request('week'),
                 'sprint' => request('sprint'),
@@ -44,4 +44,5 @@ class AddTaskController extends Controller
 
         return redirect('/');
     }
+
 }
