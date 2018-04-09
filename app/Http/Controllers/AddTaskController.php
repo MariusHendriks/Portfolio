@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 
 use App\WebsiteText;
+use Mews\Purifier\Facades\Purifier;
 
 class AddTaskController extends Controller
 {
@@ -33,13 +34,13 @@ class AddTaskController extends Controller
         ]);
 
         (new \App\WebsiteText)->create([
-                'textContent' => request('content'),
+                'textContent' => Purifier::clean(request('content')),
                 'week' => request('week'),
                 'sprint' => request('sprint'),
-                'title' => request('title'),
-                'course' => request('course'),
+                'title' => (request('title')),
+                'course' => (request('course')),
                 'proudness' => request('proudness'),
-                'photopath' => request('photopath')
+                'photopath' => Purifier::clean(request('photopath'))
             ]);
 
         return redirect('/');
