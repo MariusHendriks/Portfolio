@@ -10,7 +10,7 @@
 
 
         @foreach($sprint as $item)
-            $(".sprint{{$sprintNumber}}").append("<a href='{{route('taskIndex', ['course' => $item->course, 'task' => $item->title])}}'> <div class='textblok'> {{$item->title}}</div></a> ");
+            $(".sprint{{$sprintNumber}}").append("<a href='{{route('taskIndex', ['course' => $item->course, 'task' => $item->title])}}'> <div id='item-{{ $item->id }}' class='textblok' data-merge='{{ $item->proudness }}'> {{$item->title}}</div></a> ");
         @endforeach
 
         $(".sprint{{$sprintNumber}}").owlCarousel({
@@ -19,16 +19,18 @@
             nav:false,
             margin:10,
             merge: true,
+            loop: true,
             responsiveClass:true,
             responsive:{
                 0:{
-                    items:1
+                    items:1,
+                    mergeFit:false
                 },
                 600:{
-                    items:3
+                    items:5
                 },
                 1000:{
-                    items:5
+                    items:7
                 }
             }
         });
