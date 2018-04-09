@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col s12">
                     <label for="content">Content:</label>
-                    <textarea id="content" placeholder="Opdracht hier" name="content" class="contentTextArea" label="content" title="content">{{!! $textContent->textContent !!}}</textarea>
+                    <textarea id="content" placeholder="Opdracht hier" name="content" class="contentTextArea" label="content" title="content"> {!! $textContent->textContent !!} </textarea>
                 </div>
             </div>
             <div class="row">
@@ -58,5 +58,8 @@
             </div>
             @include ('errorcheck')
         </form>
+        <script>
+          CKEDITOR.replace( 'content' );
+        </script>
     </div>
 @endsection

@@ -42,10 +42,11 @@
                     <input type="text" name="photopath" title="photopath"/>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col s12">
                     <label for="content">Content:</label>
-                    <textarea id="content" placeholder="Opdracht hier" name="content" class="contentTextArea" label="content" title="content" ></textarea>
+                    <textarea id="content" class="form-control" placeholder="Opdracht hier" name="content" class="contentTextArea" label="content" title="content" ></textarea>
                 </div>
             </div>
             <div class="row">
@@ -57,5 +58,16 @@
             </div>
            @include ('errorcheck')
         </form>
+        <script>
+
+          var options = {
+            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
+            filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+            filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
+          };
+          CKEDITOR.replace('content', options);
+
+        </script>
     </div>
 @endsection

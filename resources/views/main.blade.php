@@ -32,9 +32,12 @@
 <main>
     <div class="container">
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
         <script src="{{asset('js/jquery.min.js')}}"></script>
         <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+
+                <script src="//cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
     </div>
     @yield('Main')
 
