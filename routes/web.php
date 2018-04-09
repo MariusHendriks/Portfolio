@@ -16,7 +16,5 @@ Route::post('/courses/{course}/{title}/edit', ['uses' => 'EditTaskController@sto
 
 Route::get('/php/', ['uses' => 'PhpExample@index']);
 
+Route::get('/courses/{course}/{title}', 'HomeController@index')->name('home');
 
-Route::get('/courses/{course}/{week}/edit', ['uses' => 'CourseEditController@index', 'as' => 'courseEdit']);
-Route::post('/courses/{course}/{week}/edit', ['uses' => 'CourseEditController@store', 'as' => 'courseEdited']);
-Route::get('/courses/{course}/{week}/', ['uses' => 'AssignmentController@index', 'as' => 'assignment']);

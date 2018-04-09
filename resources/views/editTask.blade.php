@@ -39,8 +39,15 @@
             </div>
             <div class="row">
                 <div class="col s12">
-                    <label for="photopath">Photo path:</label>
-                    <input type="text" name="photopath" title="photopath" value="{{$textContent->photopath}}"/>
+                    <div class="input-group">
+                       <span class="input-group-btn">
+                         <a id="lfm" data-input="thumbnail" data-preview="holder" class="btn btn-primary">
+                           <i class="fa fa-picture-o"></i> Choose thumbnail
+                         </a>
+                       </span>
+                        <input id="thumbnail" class="form-control" type="hidden" name="filepath">
+                    </div>
+                    <img id="holder" src="{{ $textContent->photopath }}" style="margin-top:15px;max-height:100px;">
                 </div>
             </div>
             <div class="row">
@@ -58,7 +65,10 @@
             </div>
             @include ('errorcheck')
         </form>
+        <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
+        <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
         <script>
+            $('#lfm').filemanager('image');
 
             var options = {
                 filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',

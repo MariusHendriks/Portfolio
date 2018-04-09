@@ -43,7 +43,7 @@ class EditTaskController extends Controller
             'title' => request('title'),
             'course' => request('course'),
             'proudness' => request('proudness'),
-            'photopath' => request('photopath')
+            'photopath' => request('filepath')
         ]);
 
         return redirect('/');

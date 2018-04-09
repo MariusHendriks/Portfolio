@@ -3,16 +3,9 @@
 </div>
 <script>
     $(document).ready(function () {
-
-        {{-- items fixen --}}
-
-
-
-
         @foreach($sprint as $item)
-            $(".sprint{{$sprintNumber}}").append("<a href='{{route('taskIndex', ['course' => $item->course, 'task' => $item->title])}}'> <div id='item-{{ $item->id }}' class='textblok' data-merge='{{ $item->proudness }}'> {{$item->title}}</div></a> ");
+            $(".sprint{{$sprintNumber}}").append("<a href='{{route('taskIndex', ['course' => $item->course, 'task' => $item->title])}}'> <div id='item-{{ $item->id }}' class='textblok' style='background-image:url({{ $item->photopath }});' data-merge='{{ $item->proudness }}'> {{$item->title}}</div></a> ");
         @endforeach
-
         $(".sprint{{$sprintNumber}}").owlCarousel({
             items: 1,
             lazyLoad: true,
