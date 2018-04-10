@@ -47,7 +47,7 @@
                        </span>
                         <input value="{{ $textContent->photopath }}" class="form-control" type="hidden" id="thumbnail" name="filepath">
                     </div>
-                    <img id="holder" src="{{ $textContent->photopath }}" style="margin-top:15px;max-height:100px;">
+                    <img id="holder" alt="{{ $textContent->title }}" src="{{ $textContent->photopath }}" style="margin-top:15px;max-height:100px;">
                 </div>
             </div>
             <div class="row">

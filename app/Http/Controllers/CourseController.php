@@ -19,8 +19,10 @@ class CourseController
         $textContent = (new WebsiteText)
             ->where('course', '=', $course)
             ->get()
+            ->sortBy('week')
             ->groupBy('sprint')
-            ->sortByDesc( 'sprint');
+            ->sortByDesc('sprint');
+
 
         return view ('course', compact('textContent'));
     }
