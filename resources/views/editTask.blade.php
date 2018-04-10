@@ -45,7 +45,7 @@
                            <i class="fa fa-picture-o"></i> Choose thumbnail
                          </a>
                        </span>
-                        <input id="thumbnail" class="form-control" type="hidden" name="filepath">
+                        <input value="{{ $textContent->photopath }}" class="form-control" type="hidden" id="thumbnail" name="filepath">
                     </div>
                     <img id="holder" src="{{ $textContent->photopath }}" style="margin-top:15px;max-height:100px;">
                 </div>
