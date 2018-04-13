@@ -4,10 +4,9 @@
 }
 html{
 	overflow-y: scroll;
-	margin-bottom: 30px;
 }
 main{
-	margin-top: 20px;
+
 }
 nav{
 	background-color: #2b542c;
@@ -23,6 +22,7 @@ img {
 p{
 	max-width: inherit;
 }
+
 .container .row{
 	margin-left: 0px;
 	margin-right: 0px;
@@ -65,28 +65,20 @@ h1,h2,h3,h4,h5,h6{
 .editpencil{
 	color: #2b542c;
 }
-
-.test {
-	width: 70px;
-	height: 50px;
-	float: left;
-	margin: 5px;
-	background: red;
-	cursor: pointer;
-}
 .mod {
 	background: blue;
 	cursor: default;
 }
 .textblok {
 	color: #fff;
+
 	background-position: center;
 	background-size: 100%;
 	height: 150px;
 	text-align: center;
 	word-wrap: break-word;
 	font-size: 28px;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-shadow: 1px 1px 1px #000, 3px 3px 5px #efefef	;
 	position: relative;
 }
 .centertext{
@@ -95,4 +87,70 @@ h1,h2,h3,h4,h5,h6{
 	left: 50%;
 	margin-right: -50%;
 	transform: translate(-50%, -50%)
+}
+
+.homepage{
+	background-color: #2b542c;
+	height: 91vh;
+}
+.homepagePhoto{
+	height: 91vh;
+}
+.homepageContent{
+	text-align: center;
+	justify-content: center;
+	margin-top:40px;
+}
+.homepageContent *{
+	color: #fff;
+}
+.row{
+	margin-bottom: 0px;
+}
+.homepagebutton{
+	margin-top: 40px;
+}
+.courseBox h3{
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+.courseBox button{
+	-webkit-transition: .5s;
+	transition: .5s;
+	width: 100%;
+	margin: 15px auto;
+}
+.courseBox:hover button{
+
+}
+.courseBox{
+	width: 95%;
+	color:#2b542c;
+	margin: 10px auto;
+	text-align: center;
+	background-color: #fff;
+	-webkit-transition: .5s;
+	transition: .5s;
+	border-radius: 5px;
+	padding: 30px 0px;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.courseBox:hover{
+	width: 100%;
+	margin: 5px auto 10px auto;
+	padding: 35px 0px;
+	background-color: #2b542c;
+	color:  #fff;
+}
+.courseBox:hover h3{
+	color: #fff;
+}
+.courseBox:hover button{
+	background-color: #fff;
+	color:#2b542c;
+	margin: 15px 0px;
+	font-weight: bold;
+}
+.courses{
+	padding-top:100px;
 }
