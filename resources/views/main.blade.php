@@ -21,7 +21,7 @@
                 <li><a href="/courses/SCO">SCO</a></li>
                 <li><a href="/courses/UXU">UXU</a></li>
                 <li><a href="/courses/PTM">PTM</a></li>
-                <li><a href="/courses/ME">ME</a></li>
+                <li><a href="/me">ME</a></li>
                 @if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1)
                     <li><a href="/courses/add">ADD</a></li>
                 @endif
