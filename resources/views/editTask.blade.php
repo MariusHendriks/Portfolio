@@ -52,6 +52,11 @@
             </div>
             <div class="row">
                 <div class="col s12">
+                  <ol>
+                    <li>Wat heb ik gedaan?</li>
+                    <li>Wat heb ik geleerd?</li>
+                    <li>Hoe word ik hier een betere media designer van?</li>
+                  </ol>
                     <label for="content">Content:</label>
                     <textarea id="content" placeholder="Opdracht hier" name="content" class="contentTextArea" label="content" title="content"> {!! $textContent->textContent !!} </textarea>
                 </div>

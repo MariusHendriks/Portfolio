@@ -13,6 +13,7 @@
       <div class="col s12">
           <h3>{{$textContent->title}}</h3>
           {!! $textContent->textContent !!}
+        
           @if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1)
           <hr>
       </div>
