@@ -217,14 +217,143 @@ h1,h2,h3,h4,h5,h6{
 	width: 30vw;
 }
 .second{
-	width: 30vw;
+	width: 17vw;
 }
 .third{
 	width: 30vw;
 }
-.event{
-	background-color: blue;
-	width: inherit;
-	height: 300px;
-	margin: 30px 0px;
+.fret{
+	border-left: 5px solid #000;
+	border-right: 5px solid #000;
+	background-color: #fff;
+	height: 170px;
+	border-top: 2px solid grey;
+
+}
+.circleGuitar{
+	background-image: url('../photos/circle.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.doublecircleGuitar{
+	background-image: url('../photos/doublecircle.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.fret:first-child{
+	margin-top:-70px;
+}
+.head{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.head img{
+
+	margin-left: 192px;
+}
+.eventright {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+	color: white;
+	padding:10px;
+}
+
+.eventright:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+.eventleft {
+	position: relative;
+		background: #00aabb;
+		border-radius: .4em;
+		padding: 10px;
+		color: white;
+}
+.me h5{
+	color: white;
+}
+.eventleft:after {
+	content: '';
+		position: absolute;
+		right: 0;
+		top: 50%;
+		width: 0;
+		height: 0;
+		border: 20px solid transparent;
+		border-left-color: #00aabb;
+		border-right: 0;
+		border-bottom: 0;
+		margin-top: -10px;
+		margin-right: -20px;
+}
+
+#eventleft1{
+	margin-top: -50px
+}
+#eventleft2{
+	margin-top: 205px;
+}
+#eventleft3{
+	margin-top: 203px;
+}
+#eventleft4{
+	margin-top: 212px;
+}
+#eventleft5{
+	margin-top: 194px;
+}
+#eventleft6{
+	margin-top: 145px;
+}
+#eventleft7{
+	margin-top: 94px;
+}
+#eventleft8{
+	margin-top: 100px;
+}
+#eventleft9{
+	margin-top: 143px;
+}
+#eventleft10{
+	margin-top: 136px;
+}
+#eventright1{
+	margin-top: 32px;
+}
+#eventright2{
+	margin-top: 140px;
+}
+#eventright3{
+	margin-top: 193px;
+}
+#eventright4{
+	margin-top: 191px;
+}
+#eventright5{
+	margin-top: 185px;
+}
+#eventright6{
+	margin-top: 134px;
+}
+#eventright7{
+	margin-top: 155px;
+}
+#eventright8{
+	margin-top: 146px;
+}
+#eventright9{
+	margin-top: 134px;
 }
