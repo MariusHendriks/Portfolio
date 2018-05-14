@@ -12,7 +12,6 @@ namespace App\Http\Controllers;
 class CoursesController
 {
     function index(){
-
         return view('courses');
     }
 
