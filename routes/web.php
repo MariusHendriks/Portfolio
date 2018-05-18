@@ -4,6 +4,12 @@ Auth::routes();
 Route::get('/', function () {
     return view('index');
 })->name('index');
+
+Route::get('/404', function () {
+    return view('404');
+})->name('404');
+
+
 Route::get('/courses', ['uses' => 'CoursesController@index']);
 Route::get('/courses/add/', ['uses' => 'AddTaskController@create', 'as' => 'addTask']);
 Route::post('/courses/add/', ['uses' => 'AddTaskController@store', 'as' => 'addTask']);

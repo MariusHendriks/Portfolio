@@ -12,7 +12,7 @@
         <div class="container centertext">
             <div class="row">
                 <div class="col s12 text-center">
-                    <img class="indexImage" src="{{asset('photos/shares/me/indeximage.png')}}">
+                    <img class="indexImage" src="{{asset('photos/shares/Me/indeximage.png')}}">
                     <p class="indexText">
                         Mijn naam is
                     </p>

@@ -13,17 +13,24 @@ use App\WebsiteText;
 
 class EditTaskController extends Controller
 {
+
+
     function index($course, $title){
+      if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1){
         $textContent = (new WebsiteText)
             ->where('title', '=', $title)
             ->get()
             ->first();
         return view('editTask', ["textContent" => $textContent]);
+      } else {
+        return redirect('404');
+      }
     }
 
 
     public function store($course, $title)
     {
+        if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1){
         $this->validate(request(),[
             'title' => 'required',
             'sprint' => 'required',
@@ -45,7 +52,9 @@ class EditTaskController extends Controller
             'proudness' => request('proudness'),
             'photopath' => request('filepath')
         ]);
-
         return redirect('/');
+      } else {
+        return redirect('404');
+      }
     }
 }

@@ -20,11 +20,16 @@ class AddTaskController extends Controller
 
     public function create()
     {
-        return view('addTask');
+        if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1){
+          return view('addTask');
+        } else {
+          return view('404');
+        }
     }
 
     public function store()
     {
+      if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1){
         $this->validate(request(),[
             'title' => 'required',
             'sprint' => 'required',
@@ -44,6 +49,9 @@ class AddTaskController extends Controller
             ]);
 
         return redirect('/');
+      } else {
+        redirect('404');
+      }
     }
 
 }

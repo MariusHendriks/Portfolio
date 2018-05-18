@@ -3,6 +3,7 @@
 </div>
 <div class="navload"></div>
 
+
 <script>
     $(document).ready(function () {
         @foreach($sprint as $item)
@@ -16,7 +17,6 @@
             dots: true,
             items: 1,
             lazyLoad: true,
-            nav:false,
             margin:10,
             merge: true,
             loop: true,
