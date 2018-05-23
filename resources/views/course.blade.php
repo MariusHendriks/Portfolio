@@ -10,6 +10,7 @@
 @section('Main')
 
     <div class="container">
+        <h2 class="courseTitle">{{$textContent->first()->first()->course}}</h2>
         @foreach($textContent as $sprint)
             <h3>Sprint {{ $sprint->first()->sprint }}</h3>
             @include('carrousel', ['sprint' => $sprint])

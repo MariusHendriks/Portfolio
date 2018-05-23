@@ -19,11 +19,16 @@
     </div>
     <div class="row">
       <div class="col s12">
-        <a href="/courses/DED/{{$textContent->title}}/edit">
+        <a href="/courses/{{$textContent->course}}/{{$textContent->title}}/edit">
           <button class="btn waves-effect waves-light default-btn editButton">Edit
               <i class="material-icons right">edit</i>
             </button>
           </a>
+          <a href="/courses/{{$textContent->course}}/{{$textContent->title}}/delete">
+              <button class="btn waves-effect waves-light default-btn editButton">Delete
+                <i class="material-icons right">delete</i>
+              </button>
+            </a>
         </div>
       </div>
 @endif

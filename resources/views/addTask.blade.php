@@ -15,25 +15,25 @@
                 <h2>Add</h2>
                 <div class="col s6">
                     <label for="title">Titel:</label>
-                    <input type="text" name="title" title="title"/>
+                    <input type="text" name="title" title="title" required/>
                 </div>
                 <div class="col s6">
                     <label for="course">Course:</label>
-                    <input type="text" name="course" title="course"/>
+                    <input type="text" name="course" title="course" required/>
                 </div>
             </div>
             <div class="row">
                 <div class="col s4">
                     <label for="week">Week:</label>
-                    <input type="number" name="week" title="week"/>
+                    <input type="number" name="week" title="week" required/>
                 </div>
                 <div class="col s4">
                     <label for="sprint">Sprint:</label>
-                    <input type="number" name="sprint" title="sprint"/>
+                    <input type="number" name="sprint" title="sprint" required/>
                 </div>
                 <div class="col s4">
                     <label for="proudness">Proudness:</label>
-                    <input type="number" name="proudness" title="proudness"/>
+                    <input type="number" name="proudness" title="proudness" required/>
                 </div>
             </div>
             <div class="row">
@@ -44,19 +44,14 @@
                            <i class="fa fa-picture-o"></i> Choose thumbnail
                          </a>
                        </span>
-                        <input id="thumbnail" class="form-control" type="hidden" name="filepath">
+                        <input id="thumbnail" class="form-control" type="hidden" name="filepath" required>
                     </div>
                     <img id="holder" style="margin-top:15px;max-height:100px;">
                 </div>
             </div>
-
+              @include ('errorcheck')
             <div class="row">
                 <div class="col s12">
-                    <ol>
-                      <li>Wat heb ik gedaan?</li>
-                      <li>Wat heb ik geleerd?</li>
-                      <li>Hoe word ik hier een betere media designer van?</li>
-                    </ol>
                     <label for="content">Content:</label>
                     <textarea id="content" class="form-control" placeholder="Opdracht hier" name="content"
                               class="contentTextArea" label="content" title="content"></textarea>
@@ -69,7 +64,7 @@
                     </button>
                 </div>
             </div>
-            @include ('errorcheck')
+
         </form>
         <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
         <script src="/vendor/laravel-filemanager/js/lfm.js"></script>

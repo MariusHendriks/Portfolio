@@ -36,7 +36,9 @@ class EditTaskController extends Controller
             'sprint' => 'required',
             'week' => 'required',
             'course' => 'required',
-            'proudness' => 'required'
+            'proudness' => 'required',
+            'filepath' => 'required',
+            'photopath' => 'required'
         ]);
         $text = $textContent = (new WebsiteText)
             ->where('title', '=', $title)
@@ -56,5 +58,22 @@ class EditTaskController extends Controller
       } else {
         return redirect('404');
       }
+    }
+
+
+    function delete($course, $title)
+    {
+      if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1){
+
+      $deletable = (new WebsiteText)
+          ->where('title', '=', $title)
+          ->where('course', '=', $course)
+          ->get()
+          ->first()
+          ->Delete();
+          return redirect('/');
+        } else {
+          return redirect('404');
+        }
     }
 }

@@ -22,7 +22,6 @@ use Illuminate\Support\Facades\URL;
               ->sortBy('week')
               ->groupBy('sprint')
               ->sortByDesc('sprint');
-
           return view ('course', compact('textContent'));
       }
   }
