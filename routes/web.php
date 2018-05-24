@@ -21,4 +21,4 @@ Route::get('/courses/{course}/{title}/delete', ['uses' => 'EditTaskController@de
 Route::get('/me', ['uses' => 'MeController@index']);
 Route::get('/php/', ['uses' => 'PhpExample@index']);
 Route::get('/courses/{course}/{title}', 'HomeController@index')->name('home');
-Route::get('/home', 'HomeController@index')->name('login');
+Route::get('/home', 'HomeController@index')->name('home');
