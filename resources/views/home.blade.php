@@ -14,10 +14,14 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in<br /><br />
+                    <a href="/">
+                    <button type="button" class="btn btn-success">To homepage</button>
+                  </a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 @endsection

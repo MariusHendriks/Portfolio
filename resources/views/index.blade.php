@@ -5,7 +5,6 @@
 @section('title')
     Courses
 @endsection
-
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
     <section class="homepage">

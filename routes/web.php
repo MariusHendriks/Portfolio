@@ -19,6 +19,9 @@ Route::get('/courses/{course}/{title}/edit', ['uses' => 'EditTaskController@inde
 Route::post('/courses/{course}/{title}/edit', ['uses' => 'EditTaskController@store']);
 Route::get('/courses/{course}/{title}/delete', ['uses' => 'EditTaskController@delete']);
 Route::get('/me', ['uses' => 'MeController@index']);
-Route::get('/php/', ['uses' => 'PhpExample@index']);
+Route::get('/php', ['uses' => 'PhpExample@index']);
+
+
+Route::get('/logout', ['uses' => 'HomeController@logout']);
 Route::get('/courses/{course}/{title}', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');

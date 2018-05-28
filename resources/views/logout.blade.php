@@ -10,11 +10,20 @@
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
 <div class="centertext">
-<h5>Hey boef! Probeer je nou zelf een link in te typen! Dat is natuurlijk niet de bedoeling!</h5>
-<a href="/">
-	<button class="btn waves-effect waves-light default-btn" action="submit" type="submit" name="submit">Ga terug naar de homepage
-			<i class="material-icons right">send</i>
-	</button>
-</a>
+  <h4>You are logged out, and will be redirected in 5 seconds</h4>
 </div>
+<script>
+
+
+    // Your application has indicated there's an error
+    window.setTimeout(function(){
+
+        // Move to a new location or you can do something else
+        window.location.href = "/";
+
+    }, 5000);
+
+</script>
+
+
 @endsection
