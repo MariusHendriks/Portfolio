@@ -16,8 +16,11 @@
 
                     You are logged in<br /><br />
                     <a href="/">
-                    <button type="button" class="btn btn-success">To homepage</button>
-                  </a>
+                    <button type="button" class="btn btn-success">Homepage</button>
+                    </a>
+                    <a href="/logout">
+                    <button type="button" class="btn btn-success">Logout</button>
+                    </a>
                 </div>
             </div>
         </div>
