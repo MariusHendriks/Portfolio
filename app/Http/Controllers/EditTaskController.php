@@ -38,7 +38,6 @@ class EditTaskController extends Controller
             'course' => 'required',
             'proudness' => 'required',
             'filepath' => 'required',
-            'photopath' => 'required'
         ]);
         $text = $textContent = (new WebsiteText)
             ->where('title', '=', $title)
