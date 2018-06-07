@@ -30,7 +30,8 @@ class EditTaskController extends Controller
 
     public function store($course, $title)
     {
-        if(\Illuminate\Support\Facades\Auth::check() && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1){
+        if(\Illuminate\Support\Facades\Auth::check()
+        && \Illuminate\Support\Facades\Auth::user()->getAuthIdentifier()==1){
         $this->validate(request(),[
             'title' => 'required',
             'sprint' => 'required',

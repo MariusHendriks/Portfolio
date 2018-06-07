@@ -20,8 +20,8 @@ Route::post('/courses/{course}/{title}/edit', ['uses' => 'EditTaskController@sto
 Route::get('/courses/{course}/{title}/delete', ['uses' => 'EditTaskController@delete']);
 Route::get('/me', ['uses' => 'MeController@index']);
 Route::get('/php', ['uses' => 'PhpExample@index']);
-
-
+Route::get('/message','AjaxController@index');
+Route::get('/ajax','AjaxController@showpage');
 Route::get('/logout', ['uses' => 'HomeController@logout']);
 Route::get('/courses/{course}/{title}', 'HomeController@index')->name('home');
 Route::get('/home', 'HomeController@index')->name('home');
