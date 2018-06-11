@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\URL;
   {
         public function index(){
           $msg = "This is a simple message.";
+          //mijn data is mijn json response
           return response()->json(array('msg'=> $msg), 200);
        }
        public function showpage(){
