@@ -13,23 +13,24 @@
 	<section class="gitaar-outter">
 		<div class="gitaar">
 			<div class="head"></div>
-			<div class="fret1"></div>
-			<div class="fret2"></div>
-			<div class="fret3"></div>
-			<div class="fret4"></div>
-			<div class="fret5"></div>
-			<div class="fret6"></div>
-			<div class="fret7"></div>
-			<div class="fret8"></div>
-			<div class="fret9"></div>
-			<div class="fret10"></div>
-			<div class="fret11"></div>
-			<div class="fret12"></div>
-			<div class="fret13"></div>
-			<div class="fret14"></div>
-			<div class="fret15"></div>
-			<div class="fret16"></div>
-			<div class="fret17"></div>
+			<div class="fret0"></div>
+			<div class="fret1 fret">Fontys</div>
+			<div class="fret2 fret"></div>
+			<div class="fret3 fret"></div>
+			<div class="fret4 fret"></div>
+			<div class="fret5 fret"></div>
+			<div class="fret6 fret"></div>
+			<div class="fret7 fret"></div>
+			<div class="fret8 fret"></div>
+			<div class="fret9 fret"></div>
+			<div class="fret10 fret"></div>
+			<div class="fret11 fret"></div>
+			<div class="fret12 fret"></div>
+			<div class="fret13 fret"></div>
+			<div class="fret14 fret"></div>
+			<div class="fret15 fret"></div>
+			<div class="fret16 fret"></div>
+			<div class="fret17 fret"></div>
 			<div class="text1 textblock rightarrow"></div>
 			<div class="text2 textblock leftarrow"></div>
 			<div class="text3 textblock rightarrow"></div>
@@ -47,6 +48,7 @@
 			<div class="text15 textblock rightarrow"></div>
 			<div class="text16 textblock leftarrow"></div>
 			<div class="text17 textblock rightarrow"></div>
+			<div class="guitarbody">
 		</div>
 	</section>
 <script>
