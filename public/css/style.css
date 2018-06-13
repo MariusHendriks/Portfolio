@@ -5,8 +5,6 @@
 }
 html{
 	overflow-y: scroll;
-	margin-bottom: 20px;
-
 }
 hr{
 	margin: 20px 0px;
@@ -235,12 +233,14 @@ h1,h2,h3,h4,h5,h6{
 .gitaar-outter{
 	display: flex;
 	justify-content: center;
+	background-image: url("../photos/geluidsmuur.png");
+	background-repeat: repeat;
 }
 .gitaar {
 	margin-top: 30px;
   display: grid;
   grid-template-columns: 500px 100px 200px 100px 500px;
-  grid-template-rows: 832px 20px repeat(22, 150px) 1300px;
+  grid-template-rows: 832px 20px repeat(22, 130px)  1300px;
   grid-template-areas:
     "head head head head head"
 		". . fret0 . ."
@@ -275,9 +275,15 @@ h1,h2,h3,h4,h5,h6{
 .fret{
 	  border: 1px solid black;
 		box-shadow: 5px 0 15px -3px rgba(0, 0, 0, 0.8), -5px 0 8px -3px rgba(0, 0, 0, 0.8);
+		justify-content: center;
+		border-bottom: 3px solid grey;
+		background-image: url("../photos/matteblack.png");
+		background-repeat: repeat;
+		background-position: center;
 }
 .textblock{
-	background-color: blue;
+	justify-self: center;
+	align-self: center;
 }
 .gitaar div {
   display: flex;
@@ -310,6 +316,7 @@ h1,h2,h3,h4,h5,h6{
 	padding: 10px;
 	color: white;
 }
+
 .leftarrow::after{
 		content: '';
 		position: absolute;
