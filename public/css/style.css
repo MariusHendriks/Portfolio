@@ -232,25 +232,77 @@ h1,h2,h3,h4,h5,h6{
 
 
 /* Me */
-.item1 { grid-area: header; }
-.item2 { grid-area: menu; }
-.item3 { grid-area: main; }
-.item4 { grid-area: right; }
-.item5 { grid-area: footer; }
+.gitaar-outter{
+	display: flex;
+	justify-content: center;
+}
+.gitaar {
+	width: 95vw;
+  display: grid;
+  grid-template-columns: 35% 5% 20% 5% 35%;
+  grid-template-rows: 300px repeat(17, 250px);
+  grid-template-areas:
+    ". head head head ."
+    ". . fret1 . text1"
+    "text2 . fret2 . ."
+    ". . fret3 . text3"
+    "text4 . fret4 . ."
+    ". . fret5 . text5"
+		"text6 . fret6 . ."
+		". . fret7 . text7"
+		"text8 . fret8 . ."
+		". . fret9 . text9"
+		"text10 . fret10 . ."
+		". . fret11 . text11"
+		"text12 . fret12 . ."
+		". . fret13 . text13"
+		"text14 . fret14 . ."
+		". . fret15 . text15"
+		"text16 . fret16 . ."
+		". . fret17 . text17";
+}
 
-.grid-container {
-	display: grid;
-	grid-template-areas:
-		'header header header header header header'
-		'menu main main main right right'
-		'menu footer footer footer footer footer';
-	grid-gap: 10px;
-	background-color: #2196F3;
-	padding: 10px;
+.gitaar div {
+  box-shadow: inset 0 0 10px #000000;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-.grid-container > div {
-	background-color: rgba(255, 255, 255, 0.8);
-	text-align: center;
-	padding: 20px 0;
-	font-size: 30px;
+.rightarrow{
+
 }
+div.head {grid-area: head;}
+div.fret1 {grid-area: fret1;}
+div.fret2 {grid-area: fret2;}
+div.fret3 {grid-area: fret3;background-image: url(../photos/circle.png);background-repeat: no-repeat;background-position: center;}
+div.fret4 {grid-area: fret4;}
+div.fret5 {grid-area: fret5;background-image: url(../photos/circle.png);background-repeat: no-repeat;background-position: center;}
+div.fret6 {grid-area: fret6;}
+div.fret7 {grid-area: fret7;background-image: url(../photos/circle.png);background-repeat: no-repeat;background-position: center;}
+div.fret8 {grid-area: fret8;}
+div.fret9 {grid-area: fret9;background-image: url(../photos/circle.png);background-repeat: no-repeat;background-position: center;}
+div.fret10 {grid-area: fret10;}
+div.fret11 {grid-area: fret11;}
+div.fret12 {grid-area: fret12;background-image: url(../photos/doublecircle.png);background-repeat: no-repeat;background-position: center;}
+div.fret13 {grid-area: fret13;}
+div.fret14 {grid-area: fret14;}
+div.fret15 {grid-area: fret15;background-image: url(../photos/circle.png);background-repeat: no-repeat;background-position: center;}
+div.fret16 {grid-area: fret16;}
+div.fret17 {grid-area: fret17;}
+div.text1 {grid-area: text1;}
+div.text2 {grid-area: text2;}
+div.text3 {grid-area: text3;}
+div.text4 {grid-area: text4;}
+div.text5 {grid-area: text5;}
+div.text6 {grid-area: text6;}
+div.text7 {grid-area: text7;}
+div.text8 {grid-area: text8;}
+div.text9 {grid-area: text9;}
+div.text10 {grid-area: text10;}
+div.text11 {grid-area: text11;}
+div.text12 {grid-area: text12;}
+div.text13 {grid-area: text13;}
+div.text14 {grid-area: text14;}
+div.text15 {grid-area: text15;}
+div.text16 {grid-area: text16;}
+div.text17 {grid-area: text17;}
