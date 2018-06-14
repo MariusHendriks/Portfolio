@@ -10,11 +10,12 @@
 {{-- Zorgt ervoor dat er doorgebouwd word op de plaats van @yield van de main.blade.php --}}
 @section('Main')
 	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
 	<section class="gitaar-outter">
 		<div class="gitaar">
 			<div class="head"></div>
 			<div class="fret0"></div>
-			<div class="fret1 fret">MBO</div>
+			<div id="fret1" class="fret1 fret">MBO</div>
 			<div class="fret2 fret">Stage in het buitenland</div>
 			<div class="fret3 fret">HBO</div>
 			<div class="fret4 fret">PHP</div>
@@ -61,9 +62,10 @@
 			<div class="guitarbody">
 		</div>
 	</section>
+	 @include('soundboard')
 <script>
 	window.sr = ScrollReveal({ reset: true });
-	sr.reveal('.textblock');
+	sr.reveal('.textblock')
 	$( document ).ready(function() {
     $(".nav").css("background-color", "#010101");
 	});
