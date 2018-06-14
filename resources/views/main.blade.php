@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 </head>
-<nav>
+<nav class="nav">
     <div class="container">
         <div class="nav-wrapper">
 

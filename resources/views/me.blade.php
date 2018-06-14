@@ -64,6 +64,10 @@
 <script>
 	window.sr = ScrollReveal({ reset: true });
 	sr.reveal('.textblock');
+	$( document ).ready(function() {
+    $(".nav").css("background-color", "#010101");
+	});
+
 </script>
 
 @endsection
