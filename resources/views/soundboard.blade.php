@@ -9,9 +9,7 @@ for (var i = 1; i < 23; i++) {
   $(".fret" + i).mouseenter(function(e) {
      var oldclassname = e.target.className;
      var newclassname = oldclassname.replace("fret", "").replace(" ", "").replace("fret", "");
-     console.log("sound" + newclassname)
      var sound = document.getElementById("sound" + newclassname);
-     console.log(sound)
      sound.play();
      sound.currentTime = 0;
   });

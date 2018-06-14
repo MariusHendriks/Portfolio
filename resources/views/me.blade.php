@@ -15,7 +15,7 @@
 		<div class="gitaar">
 			<div class="head"></div>
 			<div class="fret0"></div>
-			<div id="fret1" class="fret1 fret">MBO</div>
+			<div class="fret1 fret">MBO</div>
 			<div class="fret2 fret">Stage in het buitenland</div>
 			<div class="fret3 fret">HBO</div>
 			<div class="fret4 fret">PHP</div>
