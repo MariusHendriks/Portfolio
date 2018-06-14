@@ -1,10 +1,10 @@
-@for ($i=0; $i < 22; $i++)
+@for ($i=0; $i < 23; $i++)
   <audio id="sound{{$i}}">
     <source src="{{asset('sounds/'.$i.'.m4a')}}" type="audio/mp4">
   </audio>
 @endfor
 <script>
-for (var i = 1; i < 22; i++) {
+for (var i = 1; i < 23; i++) {
   console.log(".fret" + i);
   $(".fret" + i).mouseenter(function(e) {
      var oldclassname = e.target.className;
